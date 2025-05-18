@@ -15,7 +15,7 @@ This project is a responsive website built using HTML and CSS.
 - I explored the use of Flexbox for creating flexible and responsive layouts, enabling me to better control the positioning of elements on the page.
 
 # Live Project
-[https://assignment-1-blue-nine.vercel.app/](https://html-css-project-9-phi.vercel.app/)
+https://html-css-project-9-one.vercel.app/
 
 ### Time taken to finish this project
 - 5 hour to complete it.
