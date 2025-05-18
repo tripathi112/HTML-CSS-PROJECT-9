@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+   overflow-x: hidden;
+    width: 100%;
+    overflow: scroll;
+    width: 100%;
+}
+nav{
+  color: #fff;
+  display:  flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 3%; 
+}
+.logo img{
+  width: 120px;
+  height: auto;
+}
+.nav-list ul{
+   display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 600px;
+}
+nav .menu{
+  display: none;
+}
+nav .menu .ham{
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+}
+@media (max-width:640px){
+  nav .nav-list{
+    display: none;
+  }
+  nav .menu{
+    display: inline;
+  }
+}
+
+/* ------------------------ hero section---------------------------- */
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.hero-left{
+  height: 630px;
+  width: 630px;
+}
+.hero-left img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero-right h4{
+  color: #c91b28;
+  font-size: 1.5rem;
+}
+.hero-right h1{
+  font-size: 4rem;
+  color: #fff;
+}
+.hero-right p{
+  color: #cecece;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.hero-right button{
+  margin-top: 1.5rem;
+  background-color: #f83241;
+  color: #fff;
+  font-size: 1.1rem;
+  height: 7vh;
+  width: 150px;
+  border: none;
+
+}
+
+/* --------------------- service section ------------------------- */
+.service-section{
+  margin-top: 2rem;
+}
+.service-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.service-cards .card{
+ background-color: #1e1e1e;
+ padding: 3rem;
+}
+.service-cards .card img{
+  width: 50px;
+}
+.card .content{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content h3{
+  color: #fff;
+}
+.content p{
+  color: #cecece;
+}
+.arrow{
+  color: #c91b28;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+.service-section .card-2{
+  background-color: #c91b28;
+}
+.card-2 .arrow{
+  color: #cecece;
+}
+/* service states */
+.service-states{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:5rem ;
+  padding: 3rem;
+}
+.service-states .left-state{
+  text-align: center;
+}
+.service-states .left-state h1{
+  font-size: 7rem;
+  color: #c91b28;
+}
+.service-states .left-state h2{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.right-state{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.right-state-1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+.state-card{
+  background-color: #1e1e1e;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.state-card h1{
+  color: #c91b28;
+}
+.state-card p{
+  color: #cecece;
+}
+
+/* ----------------------------- project section------------------------- */
+.project-section{
+  margin-top: 2rem;
+  padding: 30px 0px 30px 0px;
+}
+.project-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project-heading .left h1{
+  color: #fff;
+}
+.project-heading .left p{
+  color: #cecece;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.project-heading .right button{
+   background-color: #f83241;
+  color: #fff;
+  font-size: 1.1rem;
+  height: 7vh;
+  width: 150px;
+  border: none;
+}
+
+/* projects */
+.projects{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.project .img{
+  margin-top: 2rem;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 50vh;
+}
+.project .img img{
+
+  width: 30vw;
+}
+.project-name{
+  margin-top: 1rem;
+}
+.project-name h2{
+  color: #fff;
+}
+
+@media (max-width:640px){
+    .project-heading .right button{
+
+      margin-top: 2rem;
+    }
+    .project .img{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      width: 100vw;
+      height: 50vh;
+    }
+    .project .img img{
+      width: 90vw;
+    }
+}
+
+/* ------------------------------- contact section------------------------- */
+.contact-section{
+  background-color: #1e1e1e;
+  margin:20px 80px 20px 80px;
+  padding: 50px 100px 50px 50px;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.contact-left h1{
+  color: #fff;
+  font-size: 2.5rem;
+}
+.contact-left p{
+  color: #cecece;
+  margin-top: 1rem;
+}
+.contact-section button{
+  background-color: #f83241;
+  color: #fff;
+  font-size: 1.1rem;
+  height: 7vh;
+  width: 150px;
+  border: none;
+}
+
+/* ---------------------------- footer ----------------------------- */
+footer{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-list ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+  color: #fff;
+}
+
+.logo-icons{
+  margin-top: 2rem;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  width: 100%;
+  padding: 30px 50px 30px 50px;
+}
+.icons img{
+  margin-left: 2rem;
+}
+@media(max-width:640px){
+  .footer-list ul{
+    gap: 2rem;
+  }
+}
